@@ -2,6 +2,10 @@ wallet-chain-btc:
 	go mod tidy
 	env GO111MODULE=on go build -v $(LDFLAGS) ./cmd/wallet-chain-btc
 
+build:
+	go mod tidy
+	env GO111MODULE=on go build -v $(LDFLAGS) ./cmd/wallet-chain-btc
+
 clean:
 	rm wallet-chain-btc
 
